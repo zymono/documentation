@@ -1,22 +1,22 @@
 ---
 title: "Authentication"
-description: "Example overview page before API endpoints"
+description: "How to authenticate request to the API"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et eros iaculis tortor dapibus cursus. Curabitur quis sapien nec tortor dictum gravida.
+The API requires authentication so that only you and your team can access your API information.
 
-```bash
-'Authorization': 'Token <team_token>'
+```javascript
+const apiToken = 'YOUR_API_TOKEN_HERE'
 ```
 
 ## API Tokens
 
-Nullam convallis mauris at nunc consectetur, ac imperdiet leo rutrum. Maecenas cursus purus a pellentesque blandit. Pellentesque vitae lacinia libero, non mollis metus.
+Your API token is the same as your panel token, which can be found by visiting [https://zymono.com/me](https://zymono.com/me) and hitting reveal under panel token.
 
-Nam id ullamcorper urna, at rutrum enim. [Maecenas vulputate](/introduction) vehicula libero, vitae sodales augue pretium nec. Quisque a magna tempor, semper risus vel, fermentum nunc. Pellentesque fermentum interdum ex, eu convallis massa blandit sed. Aliquam bibendum ipsum vel laoreet auctor.
+You should store your API token in an environment variable so that users can see it as it must remain private.
 
 ### Permissions
 
-Etiam lobortis ut odio ut fermentum. Nunc odio velit, sollicitudin at consectetur id, tristique eget turpis. Aliquam at risus vitae dolor sodales venenatis. In hac habitasse platea dictumst.
+This API key will grant you access to all of your information retrievable by the API.
 
-Aenean consequat diam eget mollis fermentum. [Quisque eu malesuada](/introduction) felis, non dignissim libero.
+This API key can be revoked by us at anytime!

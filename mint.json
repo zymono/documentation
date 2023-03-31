@@ -1,25 +1,25 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Documentation Starter Kit",
+  "name": "Zymono",
   "logo": {
-    "dark": "/logo/dark.png",
-    "light": "/logo/light.png"
+    "dark": "/logo/zymono-icon (1).png",
+    "light": "/logo/zymono-light.png"
   },
   "favicon": "/favicon.png",
   "colors": {
-    "primary": "#0069ED",
-    "light": "#4D9CFF",
-    "dark": "#0050B4"
+    "primary": "#9966ff",
+    "light": "#9966ff",
+    "dark": "#9966ff"
   },
   "topbarLinks": [
     {
-      "name": "Documentation",
-      "url": "https://mintlify.com/docs"
+      "name": "Support",
+      "url": "https://zymono.com/support"
     }
   ],
   "topbarCtaButton": {
-    "name": "Get Started",
-    "url": "https://github.com/mintlify/starter"
+    "name": "Zymono",
+    "url": "https://zymono.com"
   },
   "anchors": [
     {
@@ -30,12 +30,12 @@
     {
       "name": "Changelog",
       "icon": "list",
-      "url": "https://mintlify.com"
+      "url": "https://broad-purple-canid.mintlify.app/changes"
     },
     {
       "name": "Community",
       "icon": "discord",
-      "url": "https://mintlify.com/community"
+      "url": "https://dsc.gg/zymono"
     }
   ],
   "navigation": [
@@ -45,21 +45,21 @@
     },
     {
       "group": "API Documentation",
-      "pages": ["api-reference/authentication"]
+      "pages": ["api-reference/authentication", "api-reference/url paramaters"]
     },
     {
       "group": "Endpoint Examples",
       "pages": [
         "api-reference/endpoint/get",
         "api-reference/endpoint/create",
-        "api-reference/endpoint/update",
+        "api-reference/url%20paramaters",
         "api-reference/endpoint/delete"
       ]
     }
   ],
   "footerSocials": {
-    "twitter": "https://twitter.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "youtube": "https://youtube.com/@zymono",
+    "github": "https://github.com/zymono",
+    "reddit": "https://www.reddit.com/r/zymono"
   }
 }
