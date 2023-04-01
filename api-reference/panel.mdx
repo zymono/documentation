@@ -1,0 +1,26 @@
+---
+title: "Create a Panel"
+description: "Create a panel to access the dashboard."
+---
+
+The API requires authentication so that only you and your team can access your API information.
+
+<CodeGroup>
+
+```html modularPanel.html
+<iframe src="https://api.zymono.com/panel/" style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;">
+<script type="module" id="zymonoPanel">
+  import { createPanel } from 'https://api.zymono.com/panel.js'
+  createPanel('Your_Panel_Key_Here')
+</script>
+```
+
+```html nonmodularPanel.html
+<script src="https://api.zymono.com/panel-nonmodular.js"></script>
+<iframe src="https://api.zymono.com/panel/" style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;">
+<script>
+    createPanel('Your_Panel_Key_Here')
+</script>
+```
+
+</CodeGroup>
