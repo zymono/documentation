@@ -48,6 +48,7 @@
       "pages": ["api-reference/authentication", "api-reference/url paramaters", "api-reference/panel"]
     }
   ],
+  "backgroundImage": "/images/bg.png",
   "footerSocials": {
     "youtube": "https://youtube.com/@zymono",
     "github": "https://github.com/zymono",
