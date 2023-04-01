@@ -30,7 +30,7 @@
     {
       "name": "Changelog",
       "icon": "list",
-      "url": "changes/"
+      "url": "https://zymono.mintlify.app/changes"
     },
     {
       "name": "Community",
@@ -49,7 +49,7 @@
     },
     {
       "group": "Chrome Extension",
-      "pages": ["extension/getting started"]
+      "pages": ["extension/getting started", "extension/source]
     }
   ],
   "backgroundImage": "/images/bg.png",
