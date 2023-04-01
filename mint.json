@@ -46,6 +46,10 @@
     {
       "group": "API Documentation",
       "pages": ["api-reference/authentication", "api-reference/url paramaters", "api-reference/panel"]
+    },
+    {
+      "group": "Chrome Extension",
+      "pages": ["extension/getting started"]
     }
   ],
   "backgroundImage": "/images/bg.png",
