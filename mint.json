@@ -49,7 +49,7 @@
     },
     {
       "group": "Chrome Extension",
-      "pages": ["extension/getting started", "extension/source]
+      "pages": ["extension/getting started", "extension/source"]
     }
   ],
   "backgroundImage": "/images/bg.png",
