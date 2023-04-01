@@ -30,7 +30,7 @@
     {
       "name": "Changelog",
       "icon": "list",
-      "url": "changes"
+      "url": "/changes/"
     },
     {
       "name": "Community",
@@ -45,7 +45,7 @@
     },
     {
       "group": "API Documentation",
-      "pages": ["api-reference/authentication", "api-reference/url paramaters"]
+      "pages": ["api-reference/authentication", "api-reference/url paramaters", "api-reference/panel"]
     },
     {
       "group": "Endpoint Examples",
