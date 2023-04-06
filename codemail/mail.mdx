@@ -28,7 +28,7 @@ description: "Create a mailing list signup in minutes."
 <script type="module">
   import { subscribe, saveCloud } from  "https://codemail.zymono.com/1.0/mail.js"
   window.addEventListener("load", function() {
-    const cmt = 'dTR2ejI4dVNUUVhZdzkzakp3RUhaWkYxT1FEMg=='
+    const cmt = 'Your_Mail_Token_Here'
     document.getElementById('cmForm').addEventListener("submit", function(event) {
       event.preventDefault()
       subscribe(cmt)
