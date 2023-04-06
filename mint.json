@@ -50,6 +50,10 @@
     {
       "group": "Chrome Extension",
       "pages": ["extension/getting started", "extension/source"]
+    },
+    {
+      "group": "Codemail",
+      "pages": ["codemail/mail"]
     }
   ],
   "backgroundImage": "/images/bg.png",
