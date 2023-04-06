@@ -1,37 +1,69 @@
 ---
-title: "Getting started With Zymono's Chrome extension"
-description: "The in and outs of using the Chrome extension for Zymono."
+title: "Zymono Codemail"
+description: "Create a mailing list signup in minutes."
 ---
 
-## Download
+## Open Codemail
 
-<Card title="Download" icon="download" iconType="duotone" href="https://chrome.google.com/webstore/detail/zymono/ddginjhkpdpojholgimhmfpajnmnlmmp">
-  Download the Chrome Extension from the Chrome Webstore.
+<Card title="Visit Website" icon="website" iconType="duotone" href="https://codemail.zymono.com">
+  Visit the Zymono Codemail website in your browser.
 </Card>
 
-## Get Started
+## Create Mailing List
 
-- Select a username or text to report as if to copy it.
+<CodeGroup>
 
-- Open the extension by clicking the icon in your extensions toolbar.
+```html cm.html
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
+    import { getStorage, ref, uploadString } from "https://email-1.zymono.repl.co/1.0/storageapi.js"; 
+</script>
 
-- Then hit "Generate Report".
+<form id="cmForm">
+  <input placeholder="Please Enter Your Email" id="codemail-email" type="email" required><br>
+  <input type="submit" value="Subscribe"><br><br>
+  This email signup form was created with Zymono Codemail and the Zymono <a href="//zymono.com/policy/privacy.html">Privacy Policy</a> and <a href="//zymono.com/policy/terms.html">Terms of Service</a> apply.
+</form>
 
-## Data it Uses
+<script type="module">
+  import { subscribe, saveCloud } from  "https://codemail.zymono.com/1.0/mail.js"
+  window.addEventListener("load", function() {
+    const cmt = 'dTR2ejI4dVNUUVhZdzkzakp3RUhaWkYxT1FEMg=='
+    document.getElementById('cmForm').addEventListener("submit", function(event) {
+      event.preventDefault()
+      subscribe(cmt)
+    })
+  })
+</script>
+```
+</CodeGroup>
 
-- Current text selected
-- What page you're on
-- If the page has Zymono attributes
-- Any images on the page
+## Zymono Fire
+
+<Card title="Watch Video" icon="youtube" iconType="duotone" href="https://www.youtube.com/watch?v=o89aeL--xLY">
+  Watch tutorial on YouTube.
+</Card>
+
+<CodeGroup>
+```html authHandler.html
+<script>
+  window.localStorage.setItem('displayName', new URLSearchParams(location.search).get('n'))
+  window.localStorage.setItem('email', new URLSearchParams(location.search).get('email'))
+  window.localStorage.setItem('uid', new URLSearchParams(location.search).get('uid'))
+  window.localStorage.setItem('photoURL', new URLSearchParams(location.search).get('pfp'))
+</script>
+```
+```html redirect.html
+  <script>
+    window.location.href = "//fire.zymono.com?b={mySite}/authhandler.html"
+  </script>
+```
+</CodeGroup>
 
 ## Common Errors
 
 <AccordionGroup>
-  <Accordion title="This website's owner has requested to block Zymono.">
-    The owner of the website blocked the Zymono Chrome extension.
-  </Accordion>
-  
-  <Accordion title="Cannot audit a report on chrome:// pages.">
-    Chrome prevents extensions from running code on any official Google/Chrome pages.
+  <Accordion title="Error when redirecting back from Zymono Fire.">
+    Fix by renaming your file from `authHandler.html` to `index.html` and placing it in a folder called `authHandler` and updating `redirect.html`.
   </Accordion>
 </AccordionGroup>
