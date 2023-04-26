@@ -44,8 +44,12 @@
       "pages": ["introduction", "features", "changes"]
     },
     {
-      "group": "API Documentation",
+      "group": "Static API Documentation",
       "pages": ["api-reference/authentication", "api-reference/url paramaters", "api-reference/panel"]
+    },
+    {
+      "group": "NodeJS API Documentation",
+      "pages": ["api-reference/node/install", "api-reference/node/authentication", "api-reference/node/report"]
     },
     {
       "group": "Chrome Extension",
