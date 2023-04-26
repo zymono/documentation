@@ -1,0 +1,33 @@
+---
+title: "Installation"
+description: "Install Zymono's NPM package on your application"
+---
+
+## Install NodeJS
+
+If you do not have NodeJS installed already you can install it at https://nodejs.org/en/download
+
+## Install Zymono
+
+In a terminal or shell console, run `npm install zymono`.
+
+This will install the Zymono API along with its dependencies.
+
+## Initate API
+
+Create a new file called index.js. or use a previous one)
+Enter this code:
+
+```js
+const { report } = require("zymono")
+```
+
+## File Report
+
+To file a report, use the `report` function.
+
+```js
+report('panel_key', 'username', 'image_url', 'reason', 'device')
+```
+
+Find the full code repo at https://replit.com/@ZymonoDev/Getting-Started-With-Zymono
