@@ -1,0 +1,24 @@
+---
+title: "Authentication"
+description: "How to authenticate request to the NodeJS API"
+---
+
+The API requires authentication so that only you and your team can access your API information.
+
+## API Tokens
+
+Your API token is the same as your panel token, which can be found by visiting [https://zymono.com/me](https://zymono.com/me) and hitting reveal under panel token.
+
+You should store your API token in an environment variable so that users cannot see it as it must remain private.
+
+```sh .env
+panel_key = 'Your Panel Key'
+```
+
+You can you tools like dotenv to data in environment variables.
+
+### Permissions
+
+This API key will grant you access to all of your information retrievable by the API.
+
+This API key can be revoked by us at anytime!
