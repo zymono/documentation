@@ -54,6 +54,10 @@
     {
       "group": "Chrome Extension",
       "pages": ["extension/getting started", "extension/source"]
+    },
+    {
+      "group": "Roblox Plugin",
+      "pages": ["roblox/start", "roblox/support"]
     }
   ],
   "backgroundImage": "/images/bg.png",
