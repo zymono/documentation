@@ -61,8 +61,12 @@
       "pages": ["extension/getting started", "extension/source"]
     },
     {
-      "group": "Roblox Plugin",
-      "pages": ["roblox/start", "roblox/support"]
+      "group": "Roblox",
+      "pages": ["plugins/roblox/start", "plugins/roblox/support"]
+    },
+    {
+      "group": "Discord",
+      "pages": ["plugins/discord/start"]
     }
   ],
   "backgroundImage": "/images/bg.png",
