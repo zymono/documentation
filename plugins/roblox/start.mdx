@@ -1,0 +1,46 @@
+---
+title: "Getting Started"
+description: "Get started with the Zymono Roblox plugin."
+---
+
+# Initiate
+
+- Install the plugin into Roblox Studio [here](https://create.roblox.com/marketplace/asset/13541247643/Zymono).
+- Navigate to the plugins tab inside of Studio.
+- Find the Zymono plugin and click on it.
+- In the form that appears on your screen, paste your Panel Key from https://zymono.com/me/.
+- Click `Initiate` and wait a few seconds.
+
+This should successfully initiate Zymono into your Roblox game.
+
+<Info>You will need to do this for each game you would like to add Zymono to</Info>
+
+# How To Use
+
+- Click on the Zymono shield in the bottom left.
+- Fill out the information asked by the form.
+- Click `Submit` or `Report`.
+
+This should send a report to your dashboard.
+
+<Info>Keep in mind that our roblox plugin is rate limited and so you cannot submit more than one report every second</Info>
+
+# Customize the Code
+
+How to customize the report sent to Zymono.
+
+- Open `ServerScriptService`.
+- Navigate to `SCRIPT`.
+- Edit any code in the POST request.
+
+# Customize the Form
+
+How to customize the report form.
+
+- Open `StarterGUI`.
+- Navigate to `ZymonoGUI`.
+- Edit any of the GUIs. (Do not edit the scripts unless you know what you are doing)
+
+# Confusing Error
+
+When you submit a report, the console will log `Successfully sent request` once and then `There was an error` twice. This is due to an error where more than one report is submitted when the user clicks the button. (There is no current fix because it does not cause any issues)
