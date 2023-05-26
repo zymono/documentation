@@ -61,6 +61,10 @@
       "pages": ["extension/getting started", "extension/source"]
     },
     {
+      "group": "Plugins",
+      "pages": ["plugins/introduction"]
+    },
+    {
       "group": "Roblox",
       "pages": ["plugins/roblox/start", "plugins/roblox/support"]
     },
