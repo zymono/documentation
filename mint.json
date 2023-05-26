@@ -27,6 +27,11 @@
       "icon": "rectangle-terminal",
       "url": "api-reference"
     },
+     {
+      "name": "Plugins",
+      "icon": "puzzle-piece",
+      "url": "plugins"
+    },
     {
       "name": "Changelog",
       "icon": "list",
