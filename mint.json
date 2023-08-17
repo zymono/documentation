@@ -50,7 +50,7 @@
     },
     {
       "group": "Static API Documentation",
-      "pages": ["api-reference/authentication", "api-reference/report"]
+      "pages": ["api-reference/authentication", "api-reference/report", "api-reference/getReports"]
     },
     {
       "group": "NodeJS API Documentation",
