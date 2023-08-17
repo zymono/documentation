@@ -1,0 +1,43 @@
+---
+title: "Delete Report"
+description: "Delete a Report."
+api: "POST https://zymono.com/api/getReports"
+---
+
+### Body
+
+<ParamField body="uid" type="string">
+  Your Panel Key. (Keep this secret!)
+</ParamField>
+
+<ParamField body="id" type="string">
+  The ID of the report you would like to delete.
+</ParamField>
+
+### Response
+
+<ResponseField name="Status" type="number">
+  Returns `200` if successful.
+</ResponseField>
+
+<RequestExample>
+
+```js Example Request
+fetch('/api/deleteReport', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ id: 'Report_ID' , uid: 'Panel_ID' }),
+  });
+```
+
+</RequestExample>
+
+<ResponseExample>
+
+```json Response
+200
+```
+
+</ResponseExample>
