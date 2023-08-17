@@ -3,60 +3,39 @@ title: "Get Report"
 description: "Retrieve your Zymono reports."
 api: "POST https://zymono.com/api/getReports"
 ---
-### Header
-
-<ParamField header="Content-Type" type="string">
-  Set this to `'application/json'`
-</ParamField>
 
 ### Body
 
-<ParamField body="id" type="string">
-  Your API Key. (Keep this secret!)
-</ParamField>
-
-<ParamField body="user" type="string">
-  Violator's Name/Username.
-</ParamField>
-
-<ParamField body="imgURL" type="string">
-  URL of an image for evidence. (Optional)
-</ParamField>
-
-<ParamField body="reason" type="string">
-  Violation Reason.
-</ParamField>
-
-<ParamField body="device" type="string">
-  Platform on which the violation took place. (E.g. Xbox, YouTube, Minecraft)
+<ParamField body="uid" type="string">
+  Your Panel Key. (Keep this secret!)
 </ParamField>
 
 ### Response
 
-<ResponseField name="code" type="number">
-  Status code of API call.
-</ResponseField>
-
-<ResponseField name="msg" type="string">
-  Error/Success Message.
+<ResponseField name="Reports" type="array">
+  An array with JSON objects inside it which include the ID and other information.
 </ResponseField>
 
 <RequestExample>
 
 ```js Example Request
-      fetch('//zymono.com/api/report', {
-        method: 'POST',
-        headers: {
-         'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          id: '', //Panel Key from https://zymono.com/me/ (Same as API key)
-          user: '', //User being reported
-          imgURL: '', //Url of an image for evidence (You can leave this blank)
-          reason: '', //Reason for report
-          device: '' //Platform (E.g. Minecraft, Xbox, Discord, etc)
-        })
-      })
+const response = await fetch('/api/getReports', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ 'Your_Panel_Key' }),
+  });
+
+  if (response.ok) {
+    const reports = await response.json();
+    console.log(reports)
+    reports.forEach(report => {
+      console.log(report)
+    })
+  } else {
+    console.error('Error fetching reports:', response.status);
+  }
 ```
 
 </RequestExample>
@@ -64,10 +43,17 @@ api: "POST https://zymono.com/api/getReports"
 <ResponseExample>
 
 ```json Response
-{
-  code: 200,
-  msg: 'Success'
-}
+[{
+  id: "Example_Report_ID",
+  data: {
+    "reason": "Reason",
+    "img": "Image URL",
+    "name": "Violator's Name",
+    "id": "ID of Submitter",
+    "device": "Device Type"
+  }
+}]
+
 ```
 
 </ResponseExample>
