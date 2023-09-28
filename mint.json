@@ -5,6 +5,7 @@
     "dark": "/logo/zymono-icon (1).png",
     "light": "/logo/zymono-light.png"
   },
+  "feedback.thumbsRating": true,
   "favicon": "favicon.png",
   "colors": {
     "primary": "#9966ff",
