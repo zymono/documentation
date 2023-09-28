@@ -11,7 +11,15 @@ Once you have installed and initalized the Zymono NPM package, you can file a re
 To file a report, use the `report` function.
 
 ```js
-report('panel_key', 'username', 'image_url', 'reason', 'device')
-```
+const { report } = require('zymono')
 
-Find the full code repo at https://replit.com/@ZymonoDev/Getting-Started-With-Zymono
+const params = {
+  id: '', //Panel Key from https://zymono.com/me/ (Same as API key)
+  user: '', //User being reported
+  imgURL: '', //Url of an image for evidence (You can leave this blank)
+  reason: '', //Reason for report
+  device: '' //Platform (E.g. Minecraft, Xbox, Discord, etc)
+}
+
+report(params)
+```
