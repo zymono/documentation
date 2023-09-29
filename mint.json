@@ -27,11 +27,12 @@
   },
   "tabs": [
     {
-      "name": "Plugins",
-      "url": "plugins"
+      "name": "API Reference",
+      "url": "api-reference"
     },
     {
-      "name"
+      "name": "Plugins",
+      "url": "plugins"
     }
   ],
   "anchors": [
