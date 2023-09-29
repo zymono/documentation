@@ -24,20 +24,18 @@
   },
   "tabs": [
     {
-      "name": "API Reference",
-      "url": "api-reference"
-    }
-  ],
-  "anchors": [
-     {
       "name": "Plugins",
-      "icon": "puzzle-piece",
       "url": "plugins"
     },
     {
-      "name": "Changelog",
-      "icon": "list",
-      "url": "https://zymono.mintlify.app/changes"
+      "name"
+    }
+  ],
+  "anchors": [
+    {
+      "name": "Help Desk",
+      "icon": "handshake",
+      "url": "https://zymono.zohodesk.com"
     },
     {
       "name": "Community",
