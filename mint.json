@@ -22,12 +22,13 @@
     "name": "Zymono",
     "url": "https://zymono.com"
   },
-  "anchors": [
+  "tabs": [
     {
       "name": "API Reference",
-      "icon": "rectangle-terminal",
       "url": "api-reference"
-    },
+    }
+  ],
+  "anchors": [
      {
       "name": "Plugins",
       "icon": "puzzle-piece",
