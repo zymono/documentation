@@ -2,8 +2,8 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "Zymono",
   "logo": {
-    "dark": "Zymono-New",
-    "light": "Zymono-New"
+    "dark": "Zymono-New.png",
+    "light": "Zymono-New.png"
   },
   "feedback": {
     "thumbsRating": true,
