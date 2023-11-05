@@ -8,15 +8,23 @@ The API requires authentication so that only you and your team can access your A
 
 ## API Tokens
 
-Your API token is the same as your panel token, which can be found by visiting [https://zymono.com/me](https://zymono.com/me) and clicking reveal under panel token.
+Your API Key can be found by visiting [https://zymono.com/api](https://zymono.com/api) and clicking reveal under API Key.
 
-You should store your API token in an environment variable so that users cannot see it as it must remain private.
+You should store your API Key in an environment variable so that users cannot see it, as it must remain private.
 
 ```sh .env
-panel_key = 'Your Panel Key'
+API_KEY = 'Your API Key'
 ```
 
 You can you tools like dotenv to data in environment variables.
+
+## Initiate the API
+
+Initiate the API with the following code
+
+```js
+zymono.init("YOUR_API_KEY")
+```
 
 ### Permissions
 
