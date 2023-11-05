@@ -24,7 +24,7 @@ const response = await fetch('/api/getReports', {
     headers: {
       'Content-Type': 'application/json',
     },
-    body: JSON.stringify({ uid: 'Your_Panel_Key' }),
+    body: JSON.stringify({ apiKey: 'Your_API_Key' }),
   });
 
   if (response.ok) {
