@@ -11,7 +11,7 @@
   },
   "favicon": "Zymono-New.png",
   "colors": {
-    "primary": "#9966ff",
+    "primary": "#0091FF",
     "light": "#9966ff",
     "dark": "#9966ff"
   },
@@ -29,22 +29,18 @@
     {
       "name": "API Reference",
       "url": "api-reference"
-    },
-    {
-      "name": "Plugins",
-      "url": "plugins"
     }
   ],
   "anchors": [
     {
       "name": "Help Desk",
       "icon": "handshake",
-      "url": "https://zymono.zohodesk.com"
+      "url": "https://blog.zymono.com"
     },
     {
-      "name": "Community",
+      "name": "API Dashboard",
       "icon": "discord",
-      "url": "https://dsc.gg/zymono"
+      "url": "https://zymono.com/dashboard/api/"
     }
   ],
   "navigation": [
@@ -59,22 +55,6 @@
     {
       "group": "NodeJS API Documentation",
       "pages": ["api-reference/node/install", "api-reference/node/authentication", "api-reference/node/report"]
-    },
-    {
-      "group": "Chrome Extension",
-      "pages": ["extension/getting started", "extension/source"]
-    },
-    {
-      "group": "Plugins",
-      "pages": ["plugins/introduction"]
-    },
-    {
-      "group": "Roblox",
-      "pages": ["plugins/roblox/start", "plugins/roblox/support"]
-    },
-    {
-      "group": "Discord",
-      "pages": ["plugins/discord/start"]
     }
   ],
   "backgroundImage": "/images/bg.png",
