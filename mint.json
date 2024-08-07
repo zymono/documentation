@@ -12,8 +12,8 @@
   "favicon": "Zymono-New.png",
   "colors": {
     "primary": "#0091FF",
-    "light": "#9966ff",
-    "dark": "#9966ff"
+    "light": "#0091FF",
+    "dark": "#0091FF"
   },
   "topbarLinks": [
     {
