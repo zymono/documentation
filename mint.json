@@ -57,7 +57,7 @@
       "pages": ["api-reference/node/install", "api-reference/node/authentication", "api-reference/node/report"]
     }
   ],
-  "backgroundImage": "/images/bg.png",
+  "backgroundImage": "/images/bbg.png",
   "footerSocials": {
     "youtube": "https://youtube.com/@zymono",
     "github": "https://github.com/zymono",
